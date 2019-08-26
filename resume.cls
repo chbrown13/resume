@@ -125,6 +125,7 @@
 
 \newenvironment{pSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} % Bold company name and date on the right
+\vspace{-7pt}
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {#3} \hfill {\em #4} % Italic job title and location
@@ -142,6 +143,7 @@
 
 \newenvironment{eSubsection}[3]{ % 4 input arguments - company name, year(s) employed, job title and location
  {#1} \hfill {#2} % Bold company name and date on the right
+  \vspace{-2pt}
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {#3} } % Italic job title and location
