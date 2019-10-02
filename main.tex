@@ -23,11 +23,13 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{setspace}
 \input{alias.tex}
+\setlength{\parskip}{0.6em}
 
 \name{\Large Dwayne Christian Brown, Jr. (``Chris")} % Your name
 \address{
-    {\small \email{dcbrow10@ncsu.com} \location{Raleigh, NC} \homepage{chbrown13.github.io} \linkedin{linkedin.com/in/chris-brown-04840654} \github{chbrown13} }
+    {\small \email{dcbrow10@ncsu.com} \location{Raleigh, NC} \homepage{https://chbrown13.github.io} \linkedin{linkedin.com/in/chris-brown-04840654} \github{chbrown13} }
 }
 \begin{document}
 
@@ -35,62 +37,44 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-12pt}
+\vspace{-14pt}
 \begin{rSection}{Education}
 \vspace{-4pt}
-{\bf North Carolina State University} \hfill {2015 - \textit{present}} \\ 
-Ph.D. in Computer Science, Advisor: Chris Parnin
-\vspace{-7pt}
+{\bf North Carolina State University} \hfill {2015 - \textit{present}} 
 
-{\bf North Carolina State University} \hfill {2015 - 2017} \\ 
-M.S. in Computer Science
-\vspace{-7pt}
+\vspace{-9pt}
+\textit{Ph.D.} in Computer Science,  Advisor: Chris Parnin 
 
-{\bf Duke University} \hfill {Class of 2013} \\ 
-B.S. in Computer Science, with Distinction
+\vspace{-9pt}
+\textit{M.S.} in Computer Science (completed 2017)
+\vspace{-6pt}
+
+{\bf Duke University} \hfill {2009 - 2013}
+
+\vspace{-9pt}
+\textit{B.S.} in Computer Science, with Distinction
 \end{rSection}
 \vspace{-12pt}
 %----------------------------------------------------------------------------------------
-%	AWARDS SECTION
+% SKILLZ SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Honors and Awards}
+\begin{rSection}{Technical Skills}
 \vspace{-4pt}
 
 \begin{sSubsection}
-    {\textbf{DevConf Diversity Scholarship}}{June 2019}
+    {\small \textbf{Red Hat Certified System Administrator (RHEL 7)}}{}
 \end{sSubsection}
-\vspace{-7pt}
+\vspace{-9pt}
 
 \begin{sSubsection}
-    {\textbf{NSF Travel Award}}{March 2019}
+    {\small \textbf{Programming languages:} Python, Java, R, Ruby, C\#, C++, C, HTML, JavaScript, SQL}{}
 \end{sSubsection}
-\vspace{-7pt}
+\vspace{-9pt}
 
 \begin{sSubsection}
-    {\textbf{NC State Graduate Merit Award}}{August 2015}
+    {\small \textbf{Tools and Technologies:} Git, Ansible, Jenkins, Docker, TravisCI, Maven, Linux, Windows, LaTex, Android}{}
 \end{sSubsection}
-\vspace{-7pt}
-
-\begin{sSubsection}
-    {\textbf{Computer Science Undergraduate Research Fellowship (CSURF)}}{2012 - 2013}
-\end{sSubsection}
-\vspace{-7pt}
-
-\begin{sSubsection}
-    {\textbf{Goldman Sachs Research Scholar}}{Summer 2012}
-\end{sSubsection}
-\vspace{-7pt}
-
-\begin{sSubsection}
-    {\textbf{Duke University LeaderShape}}{Summer 2012}
-\end{sSubsection}
-\vspace{-7pt}
-
-\begin{sSubsection}
-    {\textbf{CRA Distributed Research for Undergraduates (DREU)}}{Summer 2011}
-\end{sSubsection}
-\end{rSection}
-\vspace{-12pt}
+\vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTION
@@ -99,124 +83,151 @@ B.S. in Computer Science, with Distinction
 \begin{rSection}{Experience}
 \vspace{-4pt}
 
-\underline{\textbf{\textit{Industry}}}
-\vspace{-7pt}
-
-\begin{eSubsection}{\textbf{Quality Engineering Intern} \textit{Red Hat}}{Summer 2017, 2018}
-{Verified bugs, automated tests, and performed other quality tasks for Red Hat Satellite}
-\end{eSubsection}
-\vspace{-7pt}
-
-\begin{eSubsection}{\textbf{Software Quality Engineer Intern} \textit{Blackbaud}}{Summer 2016}
-{Fixed bugs, documentation, and used AppDynamics to build a dashboard for Online Express}
-\item 
-\end{eSubsection}
-\vspace{-7pt}
-
-\begin{eSubsection}{\textbf{Python Developer} \textit{Bank of America}}{2013 - 2015}
-{Developed, maintained, and tested code for the Manual Adjustment Tool using Scrum processes}
-\item 
-\end{eSubsection}
-\vspace{-7pt}
-
 \underline{\textbf{\textit{Research:}}}
+\vspace{-8pt}
+
+\begin{pSubsection}{\small Research Assistant}{\small Fall 2016 - \textit{present}}{\small Raleigh, NC}{\small North Carolina State University}
+\item {\small Developed and evaluated an Eclipse plugin in Java to improve code navigation in the IDE called \textit{Flower}}
+\item {\small Conducted a user study to determine effective characteristics of peer interactions for tool recommendations}
+\item {\small Developed and evaluated \textsl{tool-recommender-bot} to generate pull requests recommending tools to Maven projects}
+\item {\small Mined GitHub repos, surveyed users, and designed a user study to explore the impact of GitHub suggested changes}
+\item {\small Published and presented research at various peer-reviewed research and industry conferences and workshops}
+
+\end{pSubsection}
+\vspace{-10pt}
+
+\begin{pSubsection}{\small Independent Study}{\small Fall 2016}{\small Raleigh, NC}{\small North Carolina State University}
+\item {\small Designed an algorithm using automated program repair concepts to grade introductory programming assignments}
+\end{pSubsection}
+\vspace{-10pt}
+
+\begin{pSubsection}{\small Undergraduate Research Fellow}{\small May 2012 - May 2013}{\small Durham, NC}{\small Duke University}
+\item {\small Researched integrating computer science into middle school education with Alice}
+\item {\small Mapped Common Core K-12 standards to CSTA computer science education standards}
+\item {\small Created tutorials for students and teachers to create Alice worlds based on educational concepts}
+\item {\small Wrote thesis \textit{``Integrating Computer Science Into Middle School Mathematics"} and published works at conferences}
+\end{pSubsection}
+\vspace{-10pt}
+
+\begin{pSubsection}{\small CRA DREU Researcher}{\small Summer 2011}{\small Providence, RI/Moss Beach, CA}{\small Brown University}
+\item {\small Investigated applications for integrating robotics into society using ROS and Python with iRobot Create robots}
+\end{pSubsection}
+\vspace{-8pt}
+
+\underline{\textbf{\textit{Industry:}}}
 \vspace{-7pt}
 
-\begin{eSubsection}{\textbf{Research Assistant} \textit{North Carolina State University}}{2016 - \textit{present}}
-{Improving development tool recommendations with Drs. Chris Parnin and Emerson Murphy-Hill}
-\end{eSubsection}
-\vspace{-7pt}
+\begin{pSubsection}{\small Quality Engineering Intern}{\small Summer 2017, 2018}{\small Raleigh, NC}{\small Red Hat}
+ \item {\small Verified bugs and automated tests with Python for the robottelo test suite for Red Hat Satellite 6}
+ \item {\small Explored Federal Information Processing Standards (FIPS) compatibility for Satellite 6 (2018)}
+ \item {\small Created Ansible roles to automatically test and install Red Hat Satellite (2018)}
+ \item {\small Implemented satellite-populate modules to configure and run robottelo tests with Docker using YAML files (2017)}
+\end{pSubsection}
+\vspace{-10pt}
 
-\begin{eSubsection}{\textbf{Independent Study} \textit{North Carolina State University} }{Fall 2016}
-{Automated program repair and CS education researcher with Dr. Guoliang Jin}
-\item 
-\end{eSubsection}
-\vspace{-7pt}
+\begin{pSubsection}{\small Software Quality Engineer Intern}{\small Summer 2016}{\small Charleston, SC}{\small Blackbaud}
+    \item {\small Fixed C\# bugs and verified test cases for Online Express and Sky Email}
+    \item {\small Improved Givalanche API Documentation with Swagger and the Blackbaud Stache framework}
+    \item {\small Constructed a dashboard to monitor the status of Online Express using AppDynamics}
+\end{pSubsection}
+\vspace{-10pt}
 
-\begin{eSubsection}{\textbf{Undergraduate Research Fellow} \textit{Duke University}}{2012 - 2013}
-{Computer Science education researcher with Dr. Susan Rodger through Duke CSURF}
-\end{eSubsection}
-\vspace{-7pt}
-
-\begin{eSubsection}{\textbf{Undergraduate Researcher} \textit{Brown University}}{Summer 2011}
-{Robotics researcher with Dr. Chad Jenkins through the CRA DREU program}
-\end{eSubsection}
-\vspace{-5pt}
+\begin{pSubsection}{\small Python Developer}{\small 2013 - 2015}{\small Charlotte, NC}{\small Bank of America}
+\item {\small Developed, maintained, and tested Python code for the internal Manual Adjustment Tool}
+\end{pSubsection}
+\vspace{-8pt}
 
 \underline{\textbf{\textit{Teaching:}}}
 \vspace{-7pt}
 
-\begin{eSubsection}{\textbf{Python Tutor} \textit{The Coding School}}{Summer 2019}
-{Taught Python to high school student through codeConnects program}
+\begin{eSubsection}{\small \textbf{Teaching and Communication Certificate} \textit{North Carolina State University}}{\small 2019 - \textit{present}}
+{\small Enrolled in graduate certificate program requiring 100 hours of approved workshops and activities}
 \end{eSubsection}
-\vspace{-7pt}
+\vspace{-8pt}
 
-\begin{eSubsection}{\textbf{Teaching Assistant} \textit{North Carolina State University}}{2015 - 2016}
-{TA for CSC326 (\textit{Software Engineering}) and CSC216 (\textit{Java Programming Concepts})}
+\begin{eSubsection}{\small \textbf{Python Tutor} \textit{The Coding School}}{\small Summer 2019}
+{\small Taught Python to a high school student through the codeConnects program teaching coding to minorities in STEM}
 \end{eSubsection}
-\vspace{-27pt}
+\vspace{-8pt}
+
+\begin{eSubsection}{\small \textbf{Teaching Assistant} \textit{North Carolina State University}}{\small 2015 - 2016}
+{\small Graded assignments, taught labs, held office hours, and managed Jenkins projects for undergraduate courses in Java}
+\end{eSubsection}
+\vspace{-10pt}
 \end{rSection}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extracurriculars, Service, and Awards}
+\vspace{-5pt}
+\begin{spacing}{0.25}
+{\small \textbf{Hackathons:} HackDuke 2019 (Volunteer), PackHacks 2018, Open Jam 2017, Duke Men's Basketball Hackathon, HackNC 2016, HackDuke 2016, Off the Grid 2016 (Blackbaud)}
+\end{spacing}
+\vspace{5pt}
+\begin{spacing}{0.25}
+{\small \textbf{Organizations:} ACM, IEEE, Python Software Foundation, Linux Foudation, Minority Engineering Graduate Student Association (MEGSA), Free Open Source Software Interest Group (FOSS), Red Hat Blacks United in Leadership and Diversity (BUILD)}
+\end{spacing}
+\vspace{5pt}
+\begin{sSubsection}
+{\small \textbf{All Things Open} Volunteer}{October 2016, 2017, 2018, 2019} 
+\end{sSubsection}
+\vspace{-8pt}
+\begin{sSubsection}
+{\small \textbf{INTech Code Camp} Volunteer}{April 27, 2019} 
+\end{sSubsection}
+\vspace{-8pt}
+\begin{sSubsection}
+{\small \textbf{DevConf.US Diversity Scholarship}}{June 2019} 
+\end{sSubsection}
+\vspace{-8pt}
+\begin{sSubsection}
+{\small \textbf{SIGSOFT CAPS NSF Travel Award} ICSE 2019}{March 2019} 
+\end{sSubsection}
+\vspace{-8pt}
+\begin{sSubsection}
+{\small \textbf{Open Source 101} Volunteer}{February 2017, 2018} 
+\end{sSubsection}
+
+
 
 %----------------------------------------------------------------------------------------
 % SERVICE SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Service}
-\vspace{-4pt}
+% \begin{rSection}{Service}
+% \vspace{-4pt}
 
-\begin{sSubsection}
-    {\textbf{Bridge to the Doctorate Program} Graduate Student Panelist}{February 15, 2019}
-\end{sSubsection}
-\vspace{-7pt}
+% \begin{sSubsection}
+%     {\textbf{Bridge to the Doctorate Program} Graduate Student Panelist}{February 15, 2019}
+% \end{sSubsection}
+% \vspace{-7pt}
 
-\begin{sSubsection}
-    {\textbf{All Things Open} Volunteer}{October 2016, 2017, 2018}
-\end{sSubsection}
-\vspace{-7pt}
+% \begin{sSubsection}
+%     {\textbf{All Things Open} Volunteer}{October 2016, 2017, 2018}
+% \end{sSubsection}
+% \vspace{-7pt}
 
-\begin{sSubsection}
-    {\textbf{Visual Languages and Human-Centric Computing} Volunteer}{October 10-13, 2017}
-\end{sSubsection}
-\vspace{-7pt}
+% \begin{sSubsection}
+%     {\textbf{Visual Languages and Human-Centric Computing} Volunteer}{October 10-13, 2017}
+% \end{sSubsection}
+% \vspace{-7pt}
 
-\begin{sSubsection}
-    {\textbf{Open Source 101} Volunteer}{February 4, 2017}
-\end{sSubsection}
-\vspace{-7pt}
+% \begin{sSubsection}
+%     {\textbf{Open Source 101} Volunteer}{February 4, 2017}
+% \end{sSubsection}
+% \vspace{-7pt}
 
-\begin{sSubsection}
-    {\textbf{Students and Technology in Academia, Research and Service (STARS)}}{2015 - 2017}
-\end{sSubsection}
-\vspace{-7pt}
+% \begin{sSubsection}
+%     {\textbf{Students and Technology in Academia, Research and Service (STARS)}}{2015 - 2017}
+% \end{sSubsection}
+% \vspace{-7pt}
 
-\begin{sSubsection}
-    {\textbf{Big Brothers Big Sisters of Greater Charlotte} Big Brother}{2014 - 2015}
-\end{sSubsection}
-\vspace{-7pt}
-\begin{sSubsection}
-    {\textbf{Hackathons:} PackHacks 2018, Duke Men's Basketball Hackathon, HackNC 2016, HackDuke 2016, Off the Grid 2016 (Blackbaud)}{}
-\end{sSubsection}
-\end{rSection}
-\vspace{-12pt}
+% \begin{sSubsection}
+%     {\textbf{Big Brothers Big Sisters of Greater Charlotte} Big Brother}{2014 - 2015}
+% \end{sSubsection}
+% \vspace{-7pt}
+% \end{rSection}
+% \vspace{-12pt}
 
-%----------------------------------------------------------------------------------------
-% SKILLZ SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Skills and Knowledge}
-\vspace{-4pt}
-\begin{sSubsection}
-    {\textbf{Programming languages:} Python, Java, Ruby, C, C++, NodeJS, HTML}{}
-\end{sSubsection}
-\vspace{-7pt}
-
-\begin{sSubsection}
-    {\textbf{Tools and Technologies:} Git, Ansible, Jenkins, TravisCI, Linux, Windows, Bash, LaTex, Android}{}
-\end{sSubsection}
-\vspace{-7pt}
-
-\begin{sSubsection}
-    {\textbf{Red Hat Certified System Administrator (RHEL 7)}}{}
-\end{sSubsection}
-\vspace{-7pt}
 
 \end{rSection}
 \end{document}
